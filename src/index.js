@@ -6,7 +6,7 @@ import {
   Text,
   View,
 } from 'react-native'
-import ViewPropTypes from 'deprecated-react-native-prop-types'
+import { TextPropTypes, ViewPropTypes } from 'deprecated-react-native-prop-types'
 import PropTypes from 'prop-types'
 
 // compatability for react-native versions < 0.44
@@ -94,7 +94,7 @@ export default class PercentageCircle extends React.PureComponent {
     bgColor: PropTypes.string,
     borderWidth: PropTypes.number,
     containerStyle: ViewPropTypesStyle,
-    textStyle: Text.propTypes.style,
+    textStyle: TextPropTypes.style,
     updateText: PropTypes.func,
     onTimeElapsed: PropTypes.func,
   };
